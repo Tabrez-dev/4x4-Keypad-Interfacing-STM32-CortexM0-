@@ -1,0 +1,94 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x8000000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          67064 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         1
+  Size of section headers:           40 (bytes)
+  Number of section headers:         7
+  Section header string table index: 6
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        08000000 010000 000374 00  AX  0   0  4
+  [ 2] .comment          PROGBITS        00000000 010374 000033 01  MS  0   0  1
+  [ 3] .ARM.attributes   ARM_ATTRIBUTES  00000000 0103a7 00002c 00      0   0  1
+  [ 4] .symtab           SYMTAB          00000000 0103d4 000180 10      5  14  4
+  [ 5] .strtab           STRTAB          00000000 010554 000069 00      0   0  1
+  [ 6] .shstrtab         STRTAB          00000000 0105bd 00003a 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x010000 0x08000000 0x08000000 0x00374 0x00374 R E 0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 24 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 08000000     0 SECTION LOCAL  DEFAULT    1 .text
+     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .comment
+     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .ARM.attributes
+     4: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
+     5: 0800009c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+     6: 080000d8     0 NOTYPE  LOCAL  DEFAULT    1 $d
+     7: 080000e0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+     8: 08000158     0 NOTYPE  LOCAL  DEFAULT    1 $d
+     9: 08000000     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    10: 0800016c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    11: 08000190     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    12: 08000194     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    13: 08000358     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    14: 080000e1   140 FUNC    GLOBAL DEFAULT    1 reset_handler
+    15: 08000374     0 NOTYPE  GLOBAL DEFAULT    1 _etext
+    16: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 _sbss
+    17: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 _sdata
+    18: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 _ebss
+    19: 08000000   156 OBJECT  GLOBAL DEFAULT    1 vector_table
+    20: 0800009d    68 FUNC    GLOBAL DEFAULT    1 system_clock_config
+    21: 08000195   480 FUNC    GLOBAL DEFAULT    1 main
+    22: 0800016d    40 FUNC    GLOBAL DEFAULT    1 delay
+    23: 20000000     0 NOTYPE  GLOBAL DEFAULT    1 _edata
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "6S-M"
+  Tag_CPU_arch: v6S-M
+  Tag_CPU_arch_profile: Microcontroller
+  Tag_THUMB_ISA_use: Thumb-1
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_align_preserved: 8-byte, except leaf SP
+  Tag_ABI_enum_size: small
+  Tag_ABI_optimization_goals: Aggressive Debug

@@ -1,0 +1,10 @@
+0800016c T delay
+20000000 T _ebss
+20000000 T _edata
+08000374 T _etext
+08000194 T main
+080000e0 T reset_handler
+20000000 T _sbss
+20000000 T _sdata
+0800009c T system_clock_config
+08000000 T vector_table
