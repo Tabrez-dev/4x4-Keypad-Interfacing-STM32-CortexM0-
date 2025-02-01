@@ -60,6 +60,6 @@ This project demonstrates the interfacing of a 4x4 keypad with the STM32F072RB m
 
 ## Work Remaining
 
-- **UART-based `printf`:** The `printf` function for debugging is currently commented out as it is not yet implemented for this microcontroller. The UART will be configured, and `printf` functionality will be added in a future update.
+- **UART-based `printf`:** The `printf` function for debugging is currently commented out as it is not yet implemented for this microcontroller. The UART will be configured, and `printf` functionality will be added in a future update.(Added but yet to be tested)
 
 
